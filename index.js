@@ -2,7 +2,7 @@
 
 //开发者请将上述依赖注释去除
 
-const hpp_CDNver = "d4051c3"
+const hpp_CDNver = "latest"
 const hpp_ver = "HexoPlusPlus@1.2.0"
 const dev_mode_branch = "dist"
 let hpp_logstatus = 0
@@ -74,7 +74,7 @@ async function handleRequest(request) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 	<title>${hpp_ver}安装</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/install.css">
+	<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/install.css">
 </head>
 <body>
 		<div class="cont_principal">
@@ -92,20 +92,20 @@ async function handleRequest(request) {
 		      <p>域名:</p>    
 		      <input type="text" class="input_text" id="hpp_domain" placeholder="xxx.xxx.com"/>
 		      <p>头像地址:</p>    
-		      <input type="text" class="input_text" id="hpp_userimage" placeholder="https://cdn.jsdelivr.net/gh/ChenYFan/CDN/img/avatar.png"/>
+		      <input type="text" class="input_text" id="hpp_userimage" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan/CDN/img/avatar.png"/>
 		      <p>标题:</p>    
 		      <input type="text" class="input_text" id="hpp_title" placeholder="XXX的后台"/>
 		      <p>icon地址:</p>    
-		      <input type="text" class="input_text" id="hpp_usericon" placeholder="https://cdn.jsdelivr.net/gh/ChenYFan/chenyfan.github.io/favicon.ico"/>
+		      <input type="text" class="input_text" id="hpp_usericon" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan/chenyfan.github.io/favicon.ico"/>
 		      <p>跨域请求:</p>    
 			  <input type="text" class="input_text" id="hpp_cors" placeholder="*"/>
 			  <h3 style="color:#fff">面板配置</h3>
 			  <p>OwOJSON地址:</p>    
-              <input type="text" class="input_text" id="hpp_OwO" placeholder="https://cdn.jsdelivr.net/gh/ChenYFan/CDN@ca3ea6c/assets/list.json" />
+              <input type="text" class="input_text" id="hpp_OwO" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan/CDN@ca3ea6c/assets/list.json" />
 			  <p>面板背景图片:</p>    
-              <input type="text" class="input_text" id="hpp_back" placeholder="https://cdn.jsdelivr.net/gh/ChenYFan-Tester/DailyGet@gh-pages/bingpic/bing.jpg" />
+              <input type="text" class="input_text" id="hpp_back" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan-Tester/DailyGet@gh-pages/bingpic/bing.jpg" />
 			  <p>懒加载图片:</p>    
-              <input type="text" class="input_text" id="hpp_lazy_img" placeholder="https://cdn.jsdelivr.net/gh/ChenYFan/blog@master/themes/fluid/source/img/loading.gif" />
+              <input type="text" class="input_text" id="hpp_lazy_img" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan/blog@master/themes/fluid/source/img/loading.gif" />
 			  <p>高亮样式:</p>    
               <input type="text" class="input_text" id="hpp_highlight_style" placeholder="github" />
 			  
@@ -169,7 +169,7 @@ async function handleRequest(request) {
 		</div>
 	</div>
 	
-	<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/install.js"></script>
+	<script src="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/install.js"></script>
 </body>
 </html>`
             return new Response(hpp_installhtml, {
@@ -359,7 +359,7 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/home.js'></script>`
+              hpp_js = `<script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/home.js'></script>`
             }
             if (path == "/hpp/admin/dash/edit") {
               hpp_edit_act = " active"
@@ -408,10 +408,10 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/notyf/notyf.min.css' /> 
-<script src="https://cdn.jsdelivr.net/npm/notyf/notyf.min.js"></script><script src="https://cdn.jsdelivr.net/gh/indrimuska/jquery-editable-select/dist/jquery-editable-select.min.js"></script><script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/edit.js'></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.plugins.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/OwO.min.css">
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/highlight.min.js"></script>
-<link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/styles/${hpp_highlight_style}.min.css' /> 
+              hpp_js = `<link rel='stylesheet' type='text/css' href='https://fastly.jsdelivr.net/npm/notyf/notyf.min.css' /> 
+<script src="https://fastly.jsdelivr.net/npm/notyf/notyf.min.js"></script><script src="https://fastly.jsdelivr.net/gh/indrimuska/jquery-editable-select/dist/jquery-editable-select.min.js"></script><script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/edit.js'></script><script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script><script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.plugins.min.js"></script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/OwO.min.css">
+<script src="https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/highlight.min.js"></script>
+<link rel='stylesheet' type='text/css' href='https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/styles/${hpp_highlight_style}.min.css' /> 
 
 `
             }
@@ -453,7 +453,7 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/notyf/notyf.min.css' /> <script src="https://cdn.jsdelivr.net/npm/notyf/notyf.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/talk.css" /><script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/talk.js'></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.plugins.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/OwO.min.css">`
+              hpp_js = `<link rel='stylesheet' type='text/css' href='https://fastly.jsdelivr.net/npm/notyf/notyf.min.css' /> <script src="https://fastly.jsdelivr.net/npm/notyf/notyf.min.js"></script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/talk.css" /><script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/talk.js'></script><script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script><script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.plugins.min.js"></script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/OwO.min.css">`
             }
             if (path == "/hpp/admin/dash/docs_man") {
               hpp_docs_man_act = " active"
@@ -492,7 +492,7 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/doc_man.js'></script>`
+              hpp_js = `<script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/doc_man.js'></script>`
 
             }
             if (path == "/hpp/admin/dash/img_man") {
@@ -531,8 +531,8 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/brutaldesign/swipebox/src/css/swipebox.css"><script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/img_man.js'></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.plugins.min.js"></script><script src="https://cdn.jsdelivr.net/gh/brutaldesign/swipebox/src/js/jquery.swipebox.min.js"></script>`
+              hpp_js = `<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/brutaldesign/swipebox/src/css/swipebox.css"><script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/img_man.js'></script><script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.plugins.min.js"></script><script src="https://fastly.jsdelivr.net/gh/brutaldesign/swipebox/src/js/jquery.swipebox.min.js"></script>`
 
             }
 			if (path == "/hpp/admin/dash/tool") {
@@ -579,7 +579,7 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/tool.js'></script>`
+              hpp_js = `<script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/tool.js'></script>`
             }
             if (path == "/hpp/admin/dash/set") {
               hpp_set_act = " active"
@@ -615,7 +615,7 @@ async function handleRequest(request) {
           </div>
         </div>
       </div>`
-              hpp_js = `<script src='https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/config.js'></script>`
+              hpp_js = `<script src='https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/config.js'></script>`
             }
             let hpp_plugin = ""
             if (hpp_plugin_css != undefined) { hpp_plugin += `<link rel="stylesheet" type="text/css" href="${hpp_plugin_css}" />` }
@@ -630,10 +630,10 @@ async function handleRequest(request) {
   <title>${hpp_title}</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   ${hpp_plugin}
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/font.css" />
-  <link href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/admin_all_${hpp_theme_mode}.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/indrimuska/jquery-editable-select/dist/jquery-editable-select.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/font.css" />
+  <link href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/admin_all_${hpp_theme_mode}.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/indrimuska/jquery-editable-select/dist/jquery-editable-select.min.css">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   <script>
   //这个脚本的用途是前端变量传递
   const hpp_ver="${hpp_ver}";
@@ -744,9 +744,9 @@ async function handleRequest(request) {
 					<!--innerHTMLEND-->
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/admin_all.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/jquery@2.2.4"></script>
+<script src="https://fastly.jsdelivr.net/npm/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/admin_all.js"></script>
 ${hpp_js}
 
 </body>
@@ -848,7 +848,7 @@ ${hpp_js}
             const hpp_r = await fetch(url, hpp_imageputinit)
             const hpp_r_s = await hpp_r.status
             if (hpp_r_s == 200 || hpp_r_s == 201) {
-              return new Response(`https://cdn.jsdelivr.net/gh/${hpp_githubimageusername}/${hpp_githubimagerepo}@${hpp_githubimagebranch}${hpp_githubimagepath}${hpp_time}.${filename}`, { status: hpp_r_s })
+              return new Response(`https://fastly.jsdelivr.net/gh/${hpp_githubimageusername}/${hpp_githubimagerepo}@${hpp_githubimagebranch}${hpp_githubimagepath}${hpp_time}.${filename}`, { status: hpp_r_s })
             } else {
               return new Response(`Fail To Upload Image`, { status: hpp_r_s })
             }
@@ -1059,7 +1059,7 @@ ${hpp_js}
             return new Response('OK')
           }
           if (path == "/hpp/admin/api/update") {
-            const update_script = await (await fetch(`https://raw.githubusercontent.com/HexoPlusPlus/HexoPlusPlus/main/index.js`)).text()
+            const update_script = await (await fetch(`https://raw.githubusercontent.com/QSlotus/HexoPlusPlus/main/index.js`)).text()
             const up_init = {
               body: update_script,
               method: "PUT",
@@ -1073,7 +1073,7 @@ ${hpp_js}
             return new Response(JSON.parse(update_resul)["success"])
           }
           if (path == "/hpp/admin/api/small_white_mouse_update") {
-            const update_script = await (await fetch(`https://raw.githubusercontent.com/HexoPlusPlus/HexoPlusPlus/dev/index.js`)).text()
+            const update_script = await (await fetch(`https://raw.githubusercontent.com/QSlotus/HexoPlusPlus/dev/index.js`)).text()
             const up_init = {
               body: update_script,
               method: "PUT",
@@ -1114,7 +1114,7 @@ ${hpp_js}
             return new Response(JSON.stringify(hpp_talk))
           }
           if (path.startsWith("/hpp/admin/api/checkupdate")) {
-            const update_check_script = await (await fetch(`https://raw.githubusercontent.com/HexoPlusPlus/HexoPlusPlus/main/update.js`)).text()
+            const update_check_script = await (await fetch(`https://raw.githubusercontent.com/QSlotus/HexoPlusPlus/main/update.js`)).text()
             return new Response(update_check_script, { headers: { headers: "content-type: application/javascript; charset=utf-8" } })
           }
           if (path == "/hpp/admin/api/del_all") {
@@ -1184,7 +1184,7 @@ ${hpp_js}
  <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1"></script>
+  <script src="https://fastly.jsdelivr.net/npm/jquery@3.4.1"></script>
   <title>后台</title>
   <style>
   .rv-root{
@@ -1195,7 +1195,7 @@ ${hpp_js}
 　　 a:hover { text-decoration:underline;color: white} 
 　　 a:visited { text-decoration: none;color: white}
   </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/login.css" /> 
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/login.css" /> 
  </head>
  <body>
   <div id="all">
@@ -1209,7 +1209,7 @@ ${hpp_js}
        <button type="button" id="login-button">登录</button>
        <br />
        <br />
-       <a href="https://github.com/HexoPlusPlus/HexoPlusPlus" id="tips" style="color: #fff;">@HexoPP</a>
+       <a href="https://github.com/QSlotus/HexoPlusPlus" id="tips" style="color: #fff;">@HexoPP</a>
       </form>
      </div>
     </div>
@@ -1227,9 +1227,9 @@ ${hpp_js}
     </ul>
    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/md5.js"></script>
-  ${hpp_captcha_no_1}<script src="https://cdn.jsdelivr.net/gh/zpfz/RVerify.js/dist/RVerify.min.js"></script>${hpp_captcha_no_2}
-	  ${hpp_captcha_no_1}<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zpfz/RVerify.js/dist/RVerify.min.css"/>${hpp_captcha_no_2}
+  <script src="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/md5.js"></script>
+  ${hpp_captcha_no_1}<script src="https://fastly.jsdelivr.net/gh/zpfz/RVerify.js/dist/RVerify.min.js"></script>${hpp_captcha_no_2}
+	  ${hpp_captcha_no_1}<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/zpfz/RVerify.js/dist/RVerify.min.css"/>${hpp_captcha_no_2}
   <script>
 document.onkeydown=keyListener;
 ${hpp_captcha_html}  RVerify.configure({
@@ -1427,8 +1427,8 @@ login();
 <title>HexoPlusPlus_Talk预览页面</title>
 </head>
 <body>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/talk.css" /> 
-<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/talk_user.js"></script>
+	<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/talk.css" /> 
+<script src="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/talk_user.js"></script>
 <div id="hpp_talk"></div>
 <script>
 new hpp_talk({
@@ -1452,7 +1452,7 @@ start: 0
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> 
         <title>HexoPlusPlusError</title>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/error.css" />
+        <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/error.css" />
 	</head>
 	<body>
 		<div class="container demo-2">
@@ -1465,12 +1465,12 @@ start: 0
                     <h1>HexoPlusPlus 错误<span>不知道你的目的是什么</span></h1>
                     <nav class="codrops-demos">
                         <a class="current-demo" href="/hpp/admin/dash/home">仪表盘</a>
-                        <a class="current-demo" href="https://github.com/HexoPlusPlus/HexoPlusPlus">Github</a>
+                        <a class="current-demo" href="https://github.com/QSlotus/HexoPlusPlus">Github</a>
                     </nav>
                 </div>
             </div>
 		</div>
-        <script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/error.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/error.js"></script>
 	</body>
 </html>
 `
@@ -1487,7 +1487,7 @@ start: 0
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> 
         <title>HexoPlusPlusError</title>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/error.css" />
+        <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/error.css" />
 	</head>
 	<body>
 		<div class="container demo-2">
@@ -1500,13 +1500,13 @@ start: 0
                     <h1>HexoPlusPlus 异常<span>${e}</span></h1>
                     <nav class="codrops-demos">
                         <a class="current-demo" href="https://hexoplusplus.js.org">文档</a>
-                        <a class="current-demo" href="https://github.com/HexoPlusPlus/HexoPlusPlus">Github</a>
+                        <a class="current-demo" href="https://github.com/QSlotus/HexoPlusPlus">Github</a>
 						<a class="current-demo" href="https://jq.qq.com/?_wv=1027&k=rAcnhzqK">QQ群寻求帮助</a>
                     </nav>
                 </div>
             </div>
 		</div>
-        <script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@${hpp_CDNver}/error.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@${hpp_CDNver}/error.js"></script>
 	</body>
 </html>
 `
