@@ -101,7 +101,7 @@ async function handleRequest(request) {
 			  <input type="text" class="input_text" id="hpp_cors" placeholder="*"/>
 			  <h3 style="color:#fff">面板配置</h3>
 			  <p>OwOJSON地址:</p>    
-              <input type="text" class="input_text" id="hpp_OwO" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan/CDN@ca3ea6c/assets/list.json" />
+              <input type="text" class="input_text" id="hpp_OwO" placeholder="https://owo.imaegoo.com/owo.json" />
 			  <p>面板背景图片:</p>    
               <input type="text" class="input_text" id="hpp_back" placeholder="https://fastly.jsdelivr.net/gh/ChenYFan-Tester/DailyGet@gh-pages/bingpic/bing.jpg" />
 			  <p>懒加载图片:</p>    
